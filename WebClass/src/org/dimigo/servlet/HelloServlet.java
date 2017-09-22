@@ -84,7 +84,7 @@ public class HelloServlet extends HttpServlet {
 	protected void service(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("service()호출");
-		super.service(req,resp);
+//		super.service(req,resp);
 	}
 	
 	@Override
