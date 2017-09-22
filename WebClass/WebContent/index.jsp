@@ -13,6 +13,7 @@
 <%! private static final String DEFAULT_NAME = "Guest"; %>
 <%--4.Scriptlet tag(스크립틀릿)--%>
 <%
+//asdf
 	//자바 코트를 그대로 작성
 	String name = request.getParameter("name");
 	if( name==null) name = DEFAULT_NAME;
