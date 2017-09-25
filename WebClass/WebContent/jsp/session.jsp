@@ -19,4 +19,4 @@ session.setAttribute("cnt",++cnt);
 <br>
 <%= request.getHeader("Cookie") %>
 </body>
-</html>
+</html> 

@@ -31,7 +31,7 @@ div.container {
    }
 </script>
 </head>
-<body>
+<body> 
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse"

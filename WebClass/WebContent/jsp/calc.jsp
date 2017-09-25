@@ -15,7 +15,7 @@
 <%-- 스크립틀릿 tag로 1~입력받은 숫자까지의 합 구하기 --%>
 
 <% String num = request.getParameter("num");
-	int sum=0;
+	int sum=0; 
 	if(num!=null){
 	int a= Integer.parseInt(num);
 	for(int i=1; i<=a; i++){
