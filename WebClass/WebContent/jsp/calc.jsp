@@ -10,7 +10,7 @@
 <body>
 <form>
 <input type="number" name="num" min ="1" required>
-<button type="submit">계산</button>
+<button type="submit">계산</button> 
 </form>
 <%-- 스크립틀릿 tag로 1~입력받은 숫자까지의 합 구하기 --%>
 
