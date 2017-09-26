@@ -10,7 +10,7 @@
 <body>
    <%-- 2. JSP 주석 tag --%>
    <%-- 3. Declaration tag (선언부) --%>
-   <%! private static final String DEFAULT_NAME = "Guest"; %>
+   <%! private static final String DEFAULT_NAME = "Guest"; %>  
    <%-- 4. Scriptlet tag(스크립틀릿) --%>
    <%
       // 자바 코드 그대로 작성
