@@ -19,5 +19,5 @@
                   data-dismiss="modal">Close</button>
             </div> 
          </div>
-      </div>   
+      </div>    
    </div>

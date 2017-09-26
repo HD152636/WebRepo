@@ -27,7 +27,7 @@ div.container {
    } 
    function menu_out(e) {
       e.setAttribute("class", "nav-item"); //<li class = "nav-item">
- 
+  
    }
 </script> 
 </head>
