@@ -29,7 +29,7 @@ div.container {
       e.setAttribute("class", "nav-item"); //<li class = "nav-item">
 
    }
-</script>
+</script> 
 </head>
 <body> 
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

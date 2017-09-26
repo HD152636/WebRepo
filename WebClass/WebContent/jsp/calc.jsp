@@ -12,7 +12,7 @@
 <input type="number" name="num" min ="1" required>
 <button type="submit">계산</button> 
 </form>
-<%-- 스크립틀릿 tag로 1~입력받은 숫자까지의 합 구하기 --%>
+<%-- 스크립틀릿 tag로 1~입력받은 숫 자까지의 합 구하기 --%>
 
 <% String num = request.getParameter("num");
 	int sum=0; 
