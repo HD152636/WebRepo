@@ -11,7 +11,7 @@
 Integer cnt = (Integer)session.getAttribute("cnt");
 if(cnt == null){
 	out.println("최초 호출");
-	cnt =0;// upboxing 
+	cnt =0;// upboxing   
 	}
 session.setAttribute("cnt",++cnt);
 %>
