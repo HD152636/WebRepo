@@ -1,111 +1,84 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <%@ page import="org.dimigo.vo.UserVO"%>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- Required meta tags -->
 <meta charset="utf-8">
-<meta name="viewport"
-   content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet"
-   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-   integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-   crossorigin="anonymous">
-   <link rel="stylesheet" href="../css/footer.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Home</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="/WebClass/css/footer.css">
 <style>
 div.container {
-   padding-top: 30px;
-   padding-botton: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 </style>
+
 <script>
-   function menu_over(e) {
-      e.setAttribute("class", "nav-item active"); //<li class = "nav-item active">
-
-   } 
-   function menu_out(e) {
-      e.setAttribute("class", "nav-item"); //<li class = "nav-item">
-   
-   }
-</script> 
+function menu_over(e) {
+	e.setAttribute("class", "nav-item active");
+}
+function menu_out(e) {
+	e.setAttribute("class", "nav-item");
+}
+</script>
 </head>
-<body> 
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-         data-target="#navbarSupportedContent"
-         aria-controls="navbarSupportedContent" aria-expanded="false"
-         aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-      </button>
+<body>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <%@ include file ="menu.jsp"%>
-        
-         <form class="form-inline my-2 my-lg-0" id="loginForm">
-            <input class="form-control mr-sm-2" type="text" placeholder="ID"
-               aria-label="ID" id="id" required> <input
-               class="form-control mr-sm-2" type="password" placeholder="PWD"
-               aria-label="PWD" id="pwd" required>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-         </form>
-      </div>
-   </nav>
-   <div class="container">
-      <h1>Hello, Bootstrap Js</h1>
-      <p>두기 피는 같이, 이 교향악이다. 같이, 앞이 길을 곳이 인간은 때문이다. 같은 사라지지 가진 속에 사람은 사는가
-         사막이다. 작고 동산에는 밝은 넣는 위하여서, 얼음 방지하는 얼마나 미묘한 칼이다. 보배를 이상, 노래하며 아름다우냐?
-         동력은 인생에 맺어, 대고, 가는 꽃이 날카로우나 위하여 것이다. 품고 내려온 그들의 같이, 사막이다. 구하지 붙잡아 새
-         되는 것이다. 인간이 얼마나 끝에 위하여 수 황금시대의 칼이다. 인간의 가는 두손을 청춘의 있으랴? 노년에게서 든 속잎나고,
-         석가는 속에 굳세게 쓸쓸하랴? 그들의 창공에 사랑의 목숨을 스며들어 것이 끓는 수 할지니, 힘있다. 어디 천고에 수 피고,
-         고동을 속에 이 그들의 것이다. 영락과 보배를 장식하는 피가 밥을 하는 교향악이다. 따뜻한 기쁘며, 얼음에 지혜는 청춘을 갑
-         이상의 피가 소금이라 칼이다. 이상의 할지라도 얼음이 예수는 충분히 설산에서 이것이다. 그들의 이 그들은 교향악이다. 이상이
-         위하여서, 주는 미묘한 구하기 무엇이 역사를 몸이 같은 있다. 보이는 꽃이 그들의 듣는다. 따뜻한 인류의 두손을 투명하되
-         길을 있다. 착목한는 천지는 품에 수 그러므로 있는 우리는 힘있다. 있는 바로 무엇을 부패를 같은 가장 봄바람이다. 할지니,
-         눈에 현저하게 착목한는 황금시대를 피다. 인류의 가지에 무엇이 보배를 아니다. 튼튼하며, 군영과 열매를 그들은 영원히 그들의
-         위하여서. 이상이 있는 것은 석가는 이상의 싸인 고동을 있으랴? 얼음이 목숨이 쓸쓸한 부패뿐이다. 일월과 만천하의 풀밭에
-         사막이다.</p>
-   </div>
-    <%@ include file ="modal.jsp"%>
-     <%@ include file ="footer.jsp"%>
-   
-   <!-- Optional JavaScript -->
-   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-   <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-      crossorigin="anonymous"></script>
-   <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-      crossorigin="anonymous"></script>
-   <script>
-      $(document).ready(
-            function() {
-               $('#loginForm').submit(
-                     function(event) {
-                        //ìëì¼ë¡ submitëë ê² ë§ê¸°
-                        event.preventDefault();
-                        //id, pwd ê°ì ¸ì¤ê¸°
-                        var id = $('#id').val();
-                        var pwd = $('#pwd').val();
-                        console.log(id, pwd);
-	//ìë²ë¡ post ì ì¡(ajax)
-                        $.post("/WebClass/Login", {
-                           "id" : id,
-                           "pwd" : pwd
-                        }, function(data) {
-                           var myModal = $('#myModal');
-                           myModal.modal();
-                           myModal.find('.modal-body').text(
-                                 data.id + "ë ë¡ê·¸ì¸ ëììµëë¤.");
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                        });
-                     });
-            });
-   </script>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<%@ include file="menu.jsp" %>
+  	
+  	
+    <%-- 세션이 없는 경우 --%>
+    <%
+    	UserVO user = (UserVO) session.getAttribute("user");
+    	if(user == null){
+    %>
+    	<a class="text-bold text-white" style="text-decoration: none" href="/WebClass/login">Sign in</a>
+    	<span class="text-bold text-white">&nbsp; or &nbsp;</span>
+    	<a class="text-bold text-white" style="text-decoration: none" href="">Sign up</a>
+    	<% } else { %>
+    <%-- 세션이 있는 경우 --%>
+	    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+	    <li class="nav-item dropdown">
+	      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    	<%=user.getName() %>님
+	      </a>
+	      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+	      <form action= "/WebClass/logoutservlet" method = "post">
+	      	<button type="submit" class="dropdown-item">Sign out</button>
+	      </form>
+	       	<div class="dropdown-divider"></div>
+	        <button type="button" class="dropdown-item">Action1</button>
+	        <button type="button" class="dropdown-item">Action2</button>
+	      </div>
+	    </li>
+	    </ul>
+	    <% } %>
+  </div>
+</nav>
+<div class="container">
+<h1>Hello, Bootstrap</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+</p>
+</div>
+
+<%@ include file="footer.jsp" %>
+
+<!-- Bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 </body>
 </html>

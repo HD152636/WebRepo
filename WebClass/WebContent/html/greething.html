@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function greeting(nation){
+	console.log('로그함수 시작');
+	if(nation =='k'){
+		document.getElementById("result").innerHTML="안녕하세요";
+	}
+	else if(nation == 'a'){
+		document.getElementById("result").innerHTML="헬로?";
+	}
+	else{
+		document.getElementById("result").innerHTML="니하오";
+	}
+}
+</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ 
+</head>
+<body>
+<input type="button" onclick="greeting('k')" value="한국">
+<input type="button" onclick="greeting('a')" value="미국">
+<input type="button" onclick="greeting('c')" value="중국">
+
+<p id="result"></p>
+
+</body>
+</html>
