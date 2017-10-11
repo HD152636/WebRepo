@@ -12,7 +12,7 @@
 <body>
 <div class="container">
 
-  <form class="form-signin" action="" method="post">
+  <form class="form-signin" action="/WebClass/login" method="post">
     <h2 class="form-signin-heading">Please sign in</h2>
     
     <label for="inputEmail" class="sr-only">Email address</label>
@@ -33,15 +33,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 <script>
-	<%-- 로그인이 실패한 경우 처리 추가 --%>
-	<%
-		if("error".equals(request.getAttribute("msg"))){
-	%>
-		var myModal = $('#myModal');
-		myModal.find('.modal-title').text('Login Error');
-		myModal.find('.modal-body').text('Invalid username or password');
-		myModal.modal();  
-		<% } %>
+   <%-- 로그인이 실패한 경우 처리 추가 --%>
+   <% 
+    if("error".equals(request.getAttribute("msg"))){
+   %>
+      var myModal = $('#myModal');
+      myModal.find('.modal-title').text('Login Error');
+      myModal.find('.modal-body').text('Invalid username or password');
+      myModal.modal();
+   <% } %>
 </script>
 
 </body>

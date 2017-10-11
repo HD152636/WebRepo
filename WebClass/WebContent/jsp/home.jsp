@@ -36,8 +36,8 @@ function menu_out(e) {
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   	<%@ include file="menu.jsp" %>
-  	
-  	
+	
+	
     <%-- 세션이 없는 경우 --%>
     <%
     	UserVO user = (UserVO) session.getAttribute("user");
@@ -45,7 +45,7 @@ function menu_out(e) {
     %>
     	<a class="text-bold text-white" style="text-decoration: none" href="/WebClass/login">Sign in</a>
     	<span class="text-bold text-white">&nbsp; or &nbsp;</span>
-    	<a class="text-bold text-white" style="text-decoration: none" href="">Sign up</a>
+    	<a class="text-bold text-white" style="text-decoration: none" href="/WebClass/signup">Sign up</a>
     	<% } else { %>
     <%-- 세션이 있는 경우 --%>
 	    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">

@@ -1,0 +1,16 @@
+@CHARSET "utf-8";
+/* css이것만 주석임 */
+
+div.container {
+   padding-top: 30px;
+   padding-botton: 20px;
+}
+#signup {
+margin-left : 10px
+}
+#profile{
+	text-ailgn : center;
+}
+img{
+	margin-left : 40%;
+}

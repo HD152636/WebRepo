@@ -21,6 +21,7 @@ public class UserVO {
 	
 	private String id;
 	private String name;
+	private String nickname;
 	/**
 	 * @return the id
 	 */
@@ -57,5 +58,5 @@ public class UserVO {
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
-	private String nickname;
+	
 }
